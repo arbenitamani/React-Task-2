@@ -19,17 +19,30 @@ body {
 
 .description {
  
-  padding: 20px 30px;
+  padding: 25px 35px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #ffffff;
-  color: #333;
+  color: #888888;
 }
 
 .tab-heading {
   cursor: pointer;
 }
+div.tabs{
+  padding: 30px;
+  margin: 0;
 
+}
+
+div.title.active {
+  margin: 0;
+border: white;
+}
+
+div.description.title.active{
+ 
+}
 .title {
   display: flex;
   justify-content: space-between;
@@ -47,9 +60,11 @@ body {
 
 .toggle-icon {
   margin-right: 10px; /* Adjust the margin as needed */
-  transition: transform 0.3s ease; /* Add a transition for smooth rotation */
+  transform: rotate(0deg); /* Default rotation is 0 degrees */
+  transition: transform 0.3s ease; /* Add a smooth transition for rotation */
 }
 
-.toggle-icon.rotate {
-  transform: rotate(720deg); /* Rotate twice (720 degrees) when active */
+.title.active .toggle-icon {
+  transform: rotate(180deg); /* Rotate 180 degrees when title is active */
 }
+
