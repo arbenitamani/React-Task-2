@@ -1,0 +1,55 @@
+
+body {
+  background-color: #f4f4f4;
+}
+.heading {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .heading.active {
+    color: black;
+  }
+  
+
+.description {
+ 
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.tab-heading {
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.title.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  
+}
+
+.toggle-icon {
+  margin-right: 10px; /* Adjust the margin as needed */
+  transition: transform 0.3s ease; /* Add a transition for smooth rotation */
+}
+
+.toggle-icon.rotate {
+  transform: rotate(720deg); /* Rotate twice (720 degrees) when active */
+}
